@@ -81,6 +81,7 @@ The core of the library.
 Each of `shape`, `dtype`, `layout`, `details` are optional.
 
 - The `shape` argument can be any of:
+  - `()`: an empty tuple indicating that the tensor is a (0 dimensional) scalar.
   - An `int`: the dimension must be of exactly this size. If it is `-1` then any size is allowed.
   - A `str`: the size of the dimension passed at runtime will be bound to this name, and all tensors checked that the sizes are consistent.
   - A `...`: An arbitrary number of dimensions of any sizes.
